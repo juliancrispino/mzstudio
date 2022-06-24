@@ -1,0 +1,239 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #5513921f;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+}
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: .5rem 3rem;
+    
+}
+header img{
+    max-height: 3rem;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+}
+li{
+    list-style: none;
+    margin-right: 1rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*  HERO  */
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/principalñ.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.hero img{
+    height: 100%;
+    width: 100%;
+}
+.titulo{
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    text-align: end;
+    margin: 10%;
+    font-size: 6rem;
+    text-shadow: 5px 5px 4px  #551392;
+}
+
+/*  ACERCA  */
+.acerca{
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 0;
+    
+}
+.visual{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.visual h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.visual h3{
+    color: #551392;
+    font-size: 1.5rem;
+}
+.img-perfil{
+    width: 40%;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+.presentacion{
+    max-width: 50%;
+    padding: 0 7rem;
+    
+}
+.presentacion h2{
+    color: #551392;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+.texto-presentacion{
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+}
+
+/*   SERVICIOS   */
+.servicios{
+    display: flex;
+    font-size: 1.2rem;
+}
+.composicion, .grabacion, .produccion{
+    background-color: #551392;
+    color: white;
+    padding: 6rem 3rem;
+    line-height: 2rem;
+    
+}
+.composicion h2{
+    font-size: 2rem;
+    margin: 2rem auto;
+}
+.grabacion{
+    background-color: #6a17b8;
+}
+.grabacion h2{
+    font-size: 2rem;
+    margin: 2rem auto;
+}
+.produccion h2{
+    font-size: 2rem;
+    margin: 2rem auto;
+}
+
+/*  Spoty  */
+.spoty{
+    padding: 10rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spoty-legend{
+    width: 80%;
+    margin-right: 2rem;
+}
+.spoty-legend h2{
+    font-size: 3rem;
+    color: #551392;
+    margin-bottom: 2rem;
+}
+.spoty-legend p{
+    color: #551392;
+    font-size: 1.2rem;
+}
+
+/*  Contacto  */
+.contacto{
+    display: flex;
+    justify-content: center;
+    background-color: #551392;
+    padding: 6rem 0;
+    color: white;
+}
+.cuadro-contacto{
+    max-height: 30rem;
+}
+.cuadro-contacto img{
+    max-height: 30rem;
+    width: 100%;
+}
+.form-div{
+    background-color: #6a17b8;
+    padding: 2rem;
+    max-width: 30%;
+}
+.form-div h2{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.form-div p{
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+form input{
+    border-radius: 10px;
+    margin-top: .5rem;
+    font-size: 1rem;
+    background-color: rgba(232, 224, 233, 0.993);
+    color: black;
+    padding: .4rem;
+}
+#submit{
+    background-color: #000000;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+#submit:hover{
+    background-color: #551392;
+    transition: ease-in-out 0.3s;
+    transform: scale(1.1);
+}
+
+/*  Footeer */
+.footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer a i:hover{
+    color: #7c45b0;
+    transition: ease-in-out 0.3s;
+    transform: scale(1.2);
+}
+.nav li a:hover{
+    color: #7c45b0;
+    transition: ease-in-out 0.3s;
+    transform: scale(1.2);
+}
+.footer img{
+    max-height: 3rem;
+    margin: 1rem;
+}
+.footer nav{
+    justify-content: center;
+}
+.redes a{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
