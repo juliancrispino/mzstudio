@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/08bb0c3fc7.js" crossorigin="anonymous"></script>
     
@@ -37,12 +38,12 @@
         </div>
 
         <section class="acerca contenedor" id="nosotros">
-            <div class="visual">
+            <div class="visual" data-aos="fade-right">
                 <h1>MZ Studios</h1>
                 <h3>Grabación, producción, mezcla y mastering</h2>
                     <img class="img-perfil" src="img/perfil.jpg" alt="Foto de perfil">
             </div>
-            <div class="presentacion">
+            <div class="presentacion" data-aos="fade-left">
                 <h2>Bienvenidos!</h2>
                 <p class="texto-presentacion">¡Hola! Somos Julián y Joaquin. Creamos MZ Studio en el año 2018, a partir
                     de la pasión que teníamos por la musica y lo que a ella rodea, comenzando con grabaciones caseras, y
@@ -53,19 +54,19 @@
         </section>
 
         <section class="servicios" id="servicios">
-            <div class="composicion contenedor">
+            <div class="composicion contenedor" data-aos="fade-right">
                 <i class="fas fa-music fa-2x"></i>
                 <h2>Composición</h2>
                 <p>Nos dedicamos tanto a la composición de tracks de terceros, así como de jingles y pubilidades
                     musicales integras.</p>
             </div>
-            <div class="grabacion contenedor">
+            <div class="grabacion contenedor" data-aos="fade-up">
                 <i class="fas fa-compact-disc fa-2x"></i>
                 <h2>Grabación</h2>
                 <p>El estudio cuenta con el equipamiento ideal para comenzar con tus grabaciones, tanto de discos como
                     singles o EPs</p>
             </div>
-            <div class="produccion contenedor">
+            <div class="produccion contenedor" data-aos="fade-left">
                 <i class="fas fa-headphones fa-2x"></i>
                 <h2>Producción</h2>
                 <p>Utilizamos los ultimos softwares para producir tu proximo track, ya sea en forma presencial o formato
@@ -74,7 +75,7 @@
         </section>
 
         <section class="spoty contenedor">
-            <div class="spoty-legend">
+            <div class="spoty-legend" data-aos="fade-right">
                 <h2>Conocé algunas de nuestras producciones</h2>
                 <p>Una gran cantidad de artistas ya nos eligieron para producir, grabar, mezlcar y masterizar sus
                     trabajos. En la siguiente playlist de Spotify podés escuchar algunos de los mas destacados de
@@ -83,17 +84,17 @@
             <iframe style="border-radius:12px; margin: 0 auto; display: block;"
                 src="https://open.spotify.com/embed/playlist/0JCthv6WmFIReDyHMJtzXj?utm_source=generator&theme=0"
                 width="70%" height="300" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" data-aos="fade-left"></iframe>
         </section>
 
         <section class="contacto" id="contacto">
-            <div class="cuadro-contacto">
+            <div class="cuadro-contacto" data-aos="fade-right">
                 <img src="img/aside.jpg" alt="Contacto">
             </div>
-            <div class="form-div">
+            <div class="form-div" data-aos="fade-left">
                 <h2>CONTACTANOS</h2>
                 <p>Por cualquier duda o consulta, sentite libre de contactarte a través de este formulario</p>
-                <form>
+                <form action="guardar2.php" method="POST">
                     <label for="nombre">Nombre</label><br>
                     <input type="text" name="nombre" id="nombre" required placeholder="Tu nombre"><br><br>
                     <label for="email">Email</label><br>
@@ -132,6 +133,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
