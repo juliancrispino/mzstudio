@@ -26,7 +26,7 @@
     </script>
 </head>
 
-<body>
+<body onload=pedirNombre()>
     <header>
         <a href="#">
             <img src="img/logo mz.png" alt="logo mz">
@@ -144,8 +144,21 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        
+        function pedirNombre(){
+            let nombre = prompt("Hola! Cual es tu nombre?")
+            let menu = document.getElementById('menu');
+            let li = document.createElement('li');
+            li.textContent = ' --- Bienvenido ' + nombre + " ---";
+            li.style.color = "#6a17b8"
+            menu.appendChild(li);
+            
+        }
+    
+    </script>
+    <script src="main.js"></script>
     <script>
         AOS.init();
     </script>

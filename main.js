@@ -16,12 +16,7 @@ var typed = new Typed('.typed', {
 });
 
 
-        let menu = document.getElementById('menu');
-		let nombre = prompt("Hola! Cual es su nombre?");
-        let li = document.createElement('li');
-        li.textContent = ' --- Bienvenido ' + nombre + "---";
-        menu.appendChild(li);
 
-		let ultimoli = document.querySelectorAll(li);
-		ultimoli.style.color = "white"
+
+
 
