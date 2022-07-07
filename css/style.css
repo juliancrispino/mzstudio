@@ -1,9 +1,9 @@
 html {
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  background-color: #5513921f;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #5513921f;
 }
 *,
 *:before,
@@ -42,6 +42,9 @@ li{
 }
 a{
     text-decoration: none;
+    color: white;
+}
+#menu li{
     color: white;
 }
 
@@ -141,7 +144,7 @@ a{
 
 /*  Spoty  */
 .spoty{
-    padding: 10rem 5rem;
+    padding: 10rem 5rem 5rem 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,6 +162,13 @@ a{
     color: #551392;
     font-size: 1.2rem;
 }
+
+.fotocar{
+    height: 50vh!important;
+    margin: -1rem auto 2rem auto;
+}
+
+
 
 /*  Contacto  */
 .contacto{
@@ -208,6 +218,9 @@ form input{
     transition: ease-in-out 0.3s;
     transform: scale(1.1);
 }
+
+
+
 
 /*  Footeer */
 .footer{

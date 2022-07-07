@@ -15,7 +15,15 @@
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/08bb0c3fc7.js" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('.slider').bxSlider();
+        });
+    </script>
 </head>
 
 <body>
@@ -23,7 +31,7 @@
         <a href="#">
             <img src="img/logo mz.png" alt="logo mz">
         </a>
-        <nav class="nav">
+        <nav class="nav" id="menu">
             <li><a href="#"> Home </a></li>
             <li><a href="#nosotros"> Nosotros </a></li>
             <li><a href="#servicios"> Servicios </a></li>
@@ -87,6 +95,9 @@
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" data-aos="fade-left"></iframe>
         </section>
 
+        
+
+
         <section class="contacto" id="contacto">
             <div class="cuadro-contacto" data-aos="fade-right">
                 <img src="img/aside.jpg" alt="Contacto">
@@ -106,6 +117,7 @@
             </div>
         </section>
 
+        
         <footer class="footer">
             <a href="#">
                 <img src="img/logo mz.png" alt="Logo MZ">
