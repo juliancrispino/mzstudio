@@ -48,6 +48,19 @@ a{
     color: white;
 }
 
+#btningresar{
+    background-color: #7c45b0;
+    padding: .4rem 1rem;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+#btningresar:hover{
+    color: #551392;
+    background-color: white;
+}
+
 
 /*  HERO  */
 .hero{

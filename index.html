@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MZ Studio</title>
+    <link rel="icon" href="./img/ondas-sonoras.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/08bb0c3fc7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -26,7 +27,7 @@
     </script>
 </head>
 
-<body onload=pedirNombre()>
+<body>
     <header>
         <a href="#">
             <img src="img/logo mz.png" alt="logo mz">
@@ -36,6 +37,7 @@
             <li><a href="#nosotros"> Nosotros </a></li>
             <li><a href="#servicios"> Servicios </a></li>
             <li><a href="#contacto"> Contacto </a></li>
+            <li><button id="btningresar" onclick="ingresarUsuario()">Ingresar <i class="fa fa-user"></i></button></li>
         </nav>
     </header>
 
@@ -145,23 +147,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        
-        function pedirNombre(){
-            let nombre = prompt("Hola! Cual es tu nombre?")
-            let menu = document.getElementById('menu');
-            let li = document.createElement('li');
-            li.textContent = ' --- Bienvenido ' + nombre + " ---";
-            li.style.color = "#6a17b8"
-            menu.appendChild(li);
-            
-        }
-    
-    </script>
     <script src="main.js"></script>
+    <script src="alerts.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
